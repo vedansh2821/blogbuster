@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blogbuster — a tiny static blog</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1><a href="index.html">Blogbuster</a></h1>
+    <p class="tagline">A tiny static blog starter. No build step, no database.</p>
+    <button id="theme-toggle" type="button">Toggle dark mode</button>
+  </header>
+
+  <main>
+    <section>
+      <h2>Posts</h2>
+      <ul id="post-list" class="post-list">
+        <li><a href="#hello-world">Hello, World</a> <span class="date">2026-11-09</span></li>
+        <li><a href="#second-post">A Second Post</a> <span class="date">2026-11-09</span></li>
+      </ul>
+    </section>
+
+    <article id="hello-world">
+      <h2>Hello, World</h2>
+      <p class="meta">Posted on 2026-11-09 &middot; <span class="reading-time"></span></p>
+      <p>Welcome to <strong>Blogbuster</strong>. This is a plain static blog: one
+      HTML file, one stylesheet, and a small script. There is nothing to install
+      and nothing to build &mdash; open <code>index.html</code> and it works.</p>
+      <p>To make it yours, edit this file, add a post in <code>posts/</code>,
+      and update the list in <code>script.js</code>. See the README for the
+      three-step guide.</p>
+    </article>
+
+    <article id="second-post">
+      <h2>A Second Post</h2>
+      <p class="meta">Posted on 2026-11-09 &middot; <span class="reading-time"></span></p>
+      <p>This is a second example post, to show how a list of articles looks.
+      Replace it with your own writing &mdash; or delete it and keep just one.</p>
+      <p>Short posts are fine. The reading-time label above is calculated by
+      <code>script.js</code> from the words in each article.</p>
+    </article>
+  </main>
+
+  <footer>
+    <p>Built with Blogbuster &middot; a static blog starter.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
